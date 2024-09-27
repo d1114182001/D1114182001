@@ -3,58 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的網站-B版本</title>
+    <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f1eb;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #5a5a5a;
         }
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 10px 0;
+        .about-container {
+            background-color: #fff;
+            width: 80%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        main {
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #d4a373;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
             margin: 20px 0;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .highlight {
+            color: #d4a373;
+        }
+        .btn-contact {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: #d4a373;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #b98b5b;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>歡迎來到我的網站-B版本</h1>
-</header>
-
-<main>
-    <h2>關於我</h2>
-    <p>這是一個簡單的 HTML 範本，你可以根據需要進行修改和擴展。</p>
-
-    <h2>我的興趣</h2>
-    <ul>
-        <li>程式設計</li>
-        <li>網頁開發</li>
-        <li>閱讀書籍</li>
-    </ul>
-
-    <h2>聯絡我</h2>
-    <p>如果你有任何問題，請通過電子郵件聯絡我：<a href="mailto:example@example.com">example@example.com</a></p>
-</main>
-
-<footer>
-    <p>&copy; 2024 我的網站</p>
-</footer>
+    <div class="about-container">
+        <img src="https://img2.91mai.com/o2o/image/5a99f570-1f7b-4d3b-9134-685591a90e7a.jpg" alt="Profile Picture" class="profile-picture">
+        <h1><i>關於我</i></h1>
+        <p>嗨！我是 <span class="highlight"><strong>黃鈺婷</strong></span>，是<mark>龍華科技大學</mark>資網系學生。</p>
+        <p>當我<sup>不在</sup>鍵盤前編寫代碼時，我喜歡<sub>尋找</sub>美味的下午茶及料理。</p>
+        <p>這是一個<del>測試</del>網站</p>
+        <a href="mailto:jane.doe@example.com" class="btn-contact">聯絡我</a>
+    </div>
 
 </body>
 </html>
+
