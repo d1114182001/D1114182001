@@ -24,6 +24,9 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin:5px;
         }
         .about-container2{
             background-color: #fff;
@@ -33,6 +36,8 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            display: flex;
+            flex-direction: column;
         }
         h1 {
             font-size: 2.5em;
@@ -67,19 +72,106 @@
         .btn-contact:hover {
             background-color: #b98b5b;
         }
+        table{
+            border-collapse: collapse;
+            
+        }
+        table th,td,tr{
+            border: solid 1px;
+        }
     </style>
 </head>
 <body>
-    <a href="https://cin.lhu.edu.tw/index.php"><img src ="./msys_1017_9288163_64201.png " width="204" height="142"></a>
-    <div class="about-container">
-        <img src="https://img2.91mai.com/o2o/image/5a99f570-1f7b-4d3b-9134-685591a90e7a.jpg" alt="Profile Picture" class="profile-picture">
-        <h1><i>關於我</i></h1>
-        <br>嗨！我是 <span class="highlight"><strong>黃鈺婷</strong></span>，是<mark><a href ="https://www.lhu.edu.tw/">龍華科技大學</a></mark></br>資網系學生。</p>
-        <p>當我<sup>不在</sup>鍵盤前編寫代碼時，我喜歡<sub>尋找</sub>美味的下午茶及料理。</p>
-        <p>這是一個<del>測試</del>網站</p>
-        <a href="mailto:jane.doe@example.com" class="btn-contact">聯絡我</a>
+    <div class="parent">
+        <div class="about-container2">
+            <a href="https://cin.lhu.edu.tw/index.php"><img src ="./msys_1017_9288163_64201.png " width="500" height="142"></a>
+        </div>
+        
+        <div class="about-container">
+            <img src="https://img2.91mai.com/o2o/image/5a99f570-1f7b-4d3b-9134-685591a90e7a.jpg" alt="Profile Picture" class="profile-picture">
+            <h1><i>關於我</i></h1>
+            <br>嗨！我是 <span class="highlight"><strong>黃鈺婷</strong></span>，是<mark><a href ="https://www.lhu.edu.tw/">龍華科技大學</a></mark></br>資網系學生。</p>
+            <p>當我<sup>不在</sup>鍵盤前編寫代碼時，我喜歡<sub>尋找</sub>美味的下午茶及料理。</p>
+            <p>這是一個<del>測試</del>網站</p>
+            <a href="mailto:jane.doe@example.com" class="btn-contact">聯絡我</a>
+        </div>
+        
+        
+        
+    
     </div>
-
+    <table>
+        <tr>
+            <th><!--標題 欄-->
+                班級:
+            </th>
+            <td>
+            資網三B
+            </td>
+            <td>
+                姓名:
+            </td>
+            <td ><!--水平合併-->
+                黃鈺婷
+            </td>
+            
+        </tr><!--one 列-->
+        <tr>
+            <th><!--標題 欄-->
+                學號:
+            </th>
+            <td>
+                D1114182001
+            </td>
+            <td>
+                導師:
+            </td>
+            <td ><!--水平合併-->
+                伍志明
+            </td>
+            
+        </tr>
+        <tr>
+            <!--垂直合併-->
+            <th>假別:</th>
+            <td colspan="3">事假</td>
+            
+        </tr>
+        <tr>
+            <!--垂直合併-->
+            <th>請假事由:</th>
+            <td colspan="3">考駕照</td>
+            
+        </tr>
+        <tr>
+            <th>請假日期:</th>
+            <td rowspan="2" colspan="3">2024/09/26 第1節起至2024/09/26 第1節止</br>1天1節</td>
+        </tr>
+        <tr>
+            <th>請假天數:</th>
+        </tr>
+        <tr>
+            <!--垂直合併-->
+            <th>節次明細:</th>
+            <td colspan="3">2024/9/26(四):1</td>
+            
+        </tr>
+        <tr>
+            <th><!--標題 欄-->
+                核准情形:
+            </th>
+            <td>
+                
+            </td>
+            <td>
+                最後編輯:
+            </td>
+            <td ><!--水平合併-->
+                
+            </td>
+            
+        </tr>
+        </table>
 </body>
 </html>
 
